@@ -55,14 +55,23 @@ This process is rewriting history and is destructive. It could be used productiv
 - ### Create a new repo and demonstrate your knowledge of the following items with screenshots:
 
   - A rebase merge
-
   - An interactive rebase merge
 
+![Rebase_example One](imgs/rebase_example.png)
+![Rebase_example Two](imgs/rebase_example1.png)
+![Rebase_example Three](imgs/rebase_example2.png)
+![Rebase_example Four](imgs/rebase_example3.png)
+![Rebase_example Five](imgs/rebase_example4.png)
+
 ## When you shouldn't rebase with a remote repo.
+
+<!-- ADD INFO HERE -->
 
 # Git reset, checkout, and revert
 
 ## What is Git reset?
+
+
 
 ## What is the difference between hard, mixed and soft?
 
