@@ -18,15 +18,39 @@ Multiple services use the name **Git** within their branding. Such as `Github`, 
 
 Github does not own the Git DVCS, since that is open source. What they do is build upon that service and make it visual and easy to use. When a repository is set up on GitHub, that is known as a _remote_. Meaning it is not locally present on the machine, but is remotely accessible. Typically, git remotes have been configured to be a URL. This is where GitHub comes to play, by integrating their service with Git. Any code commits on a working project, could be _pushed_ to the remote, updating the source of truth for an application.
 
+<br>
+
 # Git rebase
 
 ## What is Git rebase?
 
+![Git Rebase](imgs/pre_rebase.png)
 
+Git creates a trail that represents the history/timeline of a repository. But this timeline can get layered or start to look like a tree, these layers are branches. In the [Why use Git?](#why-use-git-what-problem-does-it-solve) section, git branches were mentioned as to how they can be used as production or dev branches.
 
-## What are some advantages and disadvantages of Git rebase? (At least 2 of each)
+![Merge Example](imgs/Merge.png)
+
+We could merge those branches into one again. The history is preserved though, meaning that the branch and its commits still exist. But the code was merged into one project once again, updating the code and the project is continuing on one _main_ branch again. This is a common practice of managing branches and is notable on GitHub with how the community works on public repositories.
+
+![Git Rebase 2](imgs/rebase.png)
+
+Instead, we could rebase the new branch into the main branch of the repository. What is different about merging here, is that the history of that branch is technically destroyed. Albeit, navigating to them via _checkout_ is still possible. But those commits in the "location" of the old branch are _orphaned_. The image example above demonstrates what is happening to the branch. The new branch's commits have been moved and their "past lives" have been more or less, deleted.
+
+### `What are some advantages and disadvantages of Git rebase?`
+
+**Advantages**:
+
+- Commits and work is being saved and _moved_ to the main branch.
+- Project and version history is being merged into one cohesive timeline.
+
+**Disadvantages**:
+
+- Branch history is destroyed and former commits are orphaned.
+- Branch history is placed at closer to the _head_ of the main branch. Rewriting history in a way.
 
 ## When shouldn't you use Git rebase? Why?
+
+This process is rewriting history and is destructive. It could be used productively probably, if and only the developers involved know what they are doing and have true sight of goals in mind. If there is teamwork involved and an extensive history of a project, you shouldn't be using git rebase. To keep the milestones in place, not only for reference and integrity of the repository. This could introduce conflicts and a loss of translation could happen in public repositories.
 
 - ### Create a new repo and demonstrate your knowledge of the following items with screenshots:
 
