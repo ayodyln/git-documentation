@@ -82,6 +82,10 @@ See below for an example of how to run the `git reset` command.
 
 #### `--hard`
 
+<video src="git_reset.mp4" autoplay loop muted></video>
+
+The video example above demonstrates the `--hard` flag on a `git reset` command. This ultimately destroys the work that was staged completely. Use this if the file should be completely removed, avoid it if you want to rework a file but just upstage it.
+
 ### `--mixed`
 
 ### `--soft`
