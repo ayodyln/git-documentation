@@ -106,7 +106,11 @@ Running `git merge <branch>` will merge those branches back into one, but keepin
 
 ## What is Git revert?
 
+<video src="video/git_revert.mp4" autoplay loop muted></video>
 
+Reverting is the process of _going back_ or inversing something. With commits, these can be reverted to a previous state. This process isn't necessarily destructive. The commit history is preserved, meaning after a revert a commit that was _reverted_ could be navigated to still via the `checkout` command. But, the work that was committed is undone and the code in a file is reverted to a previous/original state, before the most recent commit.
+
+The video above demonstrates what happens to a created `test.md` file with some string in it. The text will be modified by two different commits and reverted to the initial commit state. Because of the `git revert HEAD` command. Which is targeting the most recent commit/or where the HEAD is. Then reverting the code to the commit just before that.
 
 ## In what ways are these commands the same and what ways are they different?
 
