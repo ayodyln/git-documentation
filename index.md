@@ -80,6 +80,14 @@ See below for an example of how to run the `git reset` command.
 
 ## What is the difference between hard, mixed and soft?
 
+#### `--hard`
+
+
+
+### `--mixed`
+
+### `--soft` 
+
 ## What is Git checkout?
 
 ## What is Git revert?
