@@ -63,15 +63,15 @@ This process is rewriting history and is destructive. It could be used productiv
 ![Rebase_example Four](imgs/rebase_example3.png)
 ![Rebase_example Five](imgs/rebase_example4.png)
 
-## When you shouldn't rebase with a remote repo.
+### When you shouldn't rebase with a remote repo.
 
-<!-- ADD INFO HERE -->
+If the master remote repository's commits are out of sync with the local repository, meaning the master was ahead of the local without the local _knowing_ about it. Especially if other developers are working on that remote branch. Pushing the code could delete commits and reformat the commit history, causing conflicts for developers looking at the code. This could also introduce merge conflicts that would need to be addressed because the branches are out of sync. Every developer contributing to the repository could be working on multiple branches and push commits. Once one developer releases, other developers don't see that and everyone's work starts to diverge.
 
 # Git reset, checkout, and revert
 
 ## What is Git reset?
 
-
+The branch is essentially a timeline.
 
 ## What is the difference between hard, mixed and soft?
 
