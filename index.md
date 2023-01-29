@@ -71,7 +71,12 @@ If the master remote repository's commits are out of sync with the local reposit
 
 ## What is Git reset?
 
-The branch is essentially a timeline.
+Each time there is an untracked file, git will prompt for that file to be staged and finally committed to the git repository's history. That's the version control system ensuring files are tracked and in a history/timeline. Once a commit has been made, that is more or less permanent--unless `git revert` is used. Before that commit event, files that have been staged have a _last chance_ to be _unstaged_ via the command `git reset <file>`. This is helpful because sometimes you may have to edit a file and/or a file was accidently staged. This could happen in the CLI by running the `git add .`, which is telling that all untracked files that have been changed are staged and ready for commit.
+
+See below for an example of how to run the `git reset` command.
+
+![Git reset example 1](imgs/git_reset_one.png)
+![Git reset example 2](imgs/git_reset_two.png)
 
 ## What is the difference between hard, mixed and soft?
 
