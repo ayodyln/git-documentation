@@ -88,6 +88,10 @@ The video example above demonstrates the `--hard` flag on a `git reset` command.
 
 ### `--mixed`
 
+<video src="git_reset_mixed.mp4" autoplay loop muted></video>
+
+
+
 ### `--soft`
 
 ## What is Git checkout?
