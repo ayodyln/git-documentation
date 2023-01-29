@@ -84,6 +84,7 @@ See below for an example of how to run the `git reset` command.
 
 
 
+
 ### `--mixed`
 
 ### `--soft` 
