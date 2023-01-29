@@ -82,12 +82,9 @@ See below for an example of how to run the `git reset` command.
 
 #### `--hard`
 
-
-
-
 ### `--mixed`
 
-### `--soft` 
+### `--soft`
 
 ## What is Git checkout?
 
