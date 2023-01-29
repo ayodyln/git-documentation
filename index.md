@@ -106,7 +106,7 @@ Running `git merge <branch>` will merge those branches back into one, but keepin
 
 ## What is Git revert?
 
-
+Commits are treated as permenent when committed. Meaning that point of history for the commit is cemented on the that timeline. All changes are tracked and updated with in the repository. But, what if a commit had some back written code or content that wasn't actaully needed? You could 
 
 ## In what ways are these commands the same and what ways are they different?
 
