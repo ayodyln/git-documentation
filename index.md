@@ -90,13 +90,23 @@ The video example above demonstrates the `--hard` flag on a `git reset` command.
 
 <video src="video/git_reset_mixed.mp4" autoplay loop muted></video>
 
-The video example is demonstrating the `git reset --mixed` command. This is is resetting the working tree/directory and the staging area too. However, the file isn't lost and the content that was added to it is kept.
+The video example is demonstrating the `git reset --mixed` command. This is resetting the working tree/directory and the staging area too. However, the file isn't lost and the content that was added to it is kept.
 
 ### `--soft`
 
+Running this command doesn't interact with or edit the working tree and staging area. After staging a file and running this command, the commit is updated and ready to be committed differently if needed ([Stackoverflow](https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do)). Using this as opposed to the `--mixed` command makes more sense to me since it's possible to see exactly what is happening to the files. However, the `--soft` command is keeping everything left as is and leaves staged files to be ready for committing.
+
 ## What is Git checkout?
 
+<video src="video/gitcheckout.mp4" autoplay loop muted></video>
+
+Navigating the git history is possible via the `git checkout <commit/branch>` command. Having the ability to look back on the history of a repository is important. Looking back on past work is beneficial. However, navigating between branches or versions of a repository introduces the ability to work between _production_ and _dev_ branches. Or, any type of branch that is needed to test something or introduce a new feature. Typically, the branches would be merged to integrate the latest features of an application.
+
+Running `git merge <branch>` will merge those branches back into one, but keeping the commit history intact. Keep in mind where the **HEAD** is located at all times by using the checkout command. Any actions like a commit when the **HEAD** isn't at the top level of a branch could result in an orphaned commit.
+
 ## What is Git revert?
+
+
 
 ## In what ways are these commands the same and what ways are they different?
 
