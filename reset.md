@@ -1,1 +1,1 @@
-This is a test for Git Reset command.
+This text will be deleted because of a Git Revert command to the last string of text.
