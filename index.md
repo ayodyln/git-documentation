@@ -133,6 +133,8 @@ Reverts should happen when an error with a commit happens. This could be a bug w
   - a commit
   - a Git revert
 
+<video src="video/gitDemo.mp4" autoplay loop muted></video>
+
 # Git submodules
 
 ## What are Git submodules?
