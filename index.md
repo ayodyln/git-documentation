@@ -114,7 +114,17 @@ The video above demonstrates what happens to a created `test.md` file with some 
 
 ## In what ways are these commands the same and what ways are they different?
 
+Reset and Revert are similar in that they are commands that undo something in a sense. Each git command allows a developer to revert to a certain point of the git workflow, because of the version control system. Git Reset is managing the stage states of untracked files--before commits. Using the flags for `--hard`, `--mixed`, and `--soft` will manipulate how the Reset command updates the staging area.
+
+Working with commits, Revert is used to back up the code to a certain point in time. While keeping the commit history preserved. If there was an error within the commit, such as a bug with some code. It is possible to revert to that commit before the bug was introduced. Working with commits makes Revert different to Reset.
+
 ## When would you use reset, checkout, or revert? Why?
+
+Resets are going to typically happen during the staging area. Before any commits happen, something could go wrong that requires a file to be edited and re-staged. Using the `--mixed` flag will probably be the best thing to do since it's the safest way to keep a file that you don't want to be lost completely.
+
+Checkouts should happen whenever you need to navigate a branch's commit history or between branches. Between branches may be the typical workflow seen, especially between a production or development build of apps. It's key to keep in mind though where the **HEAD** is and how merges would affect other branches.
+
+Reverts should happen when an error with a commit happens. This could be a bug within the code that was over looked or a commit that was supposed to happen in general. This reverts the state of the commit history to the last commit, with the _older_ code. However, this keeps the git history intact and lets anyone know there was a revert that happened. It is nice to have a well-documented repository and commit history.
 
 - ### Create a new repo and demonstrate your knowledge of the following items with screenshots:
 
