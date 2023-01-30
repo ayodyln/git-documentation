@@ -147,6 +147,8 @@ Configuration should be implemented to improve the workflow when using submodule
 
 Using a submodule is going to be a very specific use case(s). Because typically, using `npm` is going to be better when trying to work with external code. It is also a bit tedious to manage too. So those use cases are maybe when two separate repositories contribute to an overall product, maybe some website with multiple levels of apps involved. Both repositories need to be managed separately, but both are interacting on some level.
 
+<video src="video/submodules.mp4" autoplay loop muted></video>
+
 ## What are the advantages and disadvantages of Git submodules?
 
 ### **Advantages** -
