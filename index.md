@@ -139,6 +139,26 @@ Reverts should happen when an error with a commit happens. This could be a bug w
 
 ## What are Git submodules?
 
+Working with other repositories is possible via `git submodules`. When working on a project, there may be a feature or other application that has it's own tracked git repository. You can integrate that git repository with the working one. Via the command `git submodules add <repository>`. This seeds a reference to that git repository by a `.gitmodules` file and installs it locally as well.
+
+Configuration should be implemented to improve the workflow when using submodules. But the general concept is, to have a working repository that needs a feature integrated. This feature is housed in another repository. Running `git submodule <repository>` will generate that file mentioned. Then giving the developer the to interact with that repository locally for another repository. Syncing though is a bit different, as compared to a `git pull`. To update a submodule in a direct way via the CLI is running `git submodule update --remote`. This fetches the remote repositories latest code for the submodule and updates it locally ([theserverside](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-update-Git-submodules)).
+
 ## When would you use a submodule?
 
+Using a submodule is going to be a very specific use case(s). Because typically, using `npm` is going to be better when trying to work with external code. It is also a bit tedious to manage too. So those use cases are maybe when two separate repositories contribute to an overall product, maybe some website with multiple levels of apps involved. Both repositories need to be managed separately, but both are interacting on some level.
+
 ## What are the advantages and disadvantages of Git submodules?
+
+### **Advantages** -
+
+- Direct access to another repositories code from another working directory/repository.
+- Seperate sets of code that is managed/documented.
+- Different commit histories.
+- Seperate teams could be working on the same project, but different distinct features.
+
+### **Disadvantages** -
+
+- Tedious managment via CLI and/or GUI.
+- Extra level of repository management.
+- Have to update submodules manually if remote.
+- Not easy to manage code modules, as compared to `npm`.
